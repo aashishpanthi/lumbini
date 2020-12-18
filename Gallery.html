@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gallery</title>
+  </head>
+  <style media="screen">
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      margin-top: 50px;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 0 100px;
+      box-sizing: border-box;
+    }
+    nav .lumbini {
+      float: left;
+      height: 100%;
+      line-height: 50px;
+    }
+    nav .lumbini h2 {
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      font-size: 35px;
+    }
+    nav ul {
+      float: right;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      list-style: none;
+    }
+
+    .gallery {
+      position: relative;
+      display: block;
+      height: 50px;
+      margin-right: 3px;
+      margin-left: 3px;
+      line-height: 50px;
+      padding: 0 20px;
+      box-sizing: border-box;
+      background: #800000;
+      color: red;
+      text-decoration: blink;
+      text-transform: uppercase;
+      transition: 3s;
+    }
+    nav ul li a {
+      position: relative;
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 20px;
+      box-sizing: border-box;
+      color: #cccccc;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 0.5s;
+    }
+    nav ul li a:hover {
+      color: #fff;
+    }
+    nav ul li a:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(800, 800, 800, 0.3);
+      transform-origin: right;
+      z-index: -1;
+      transform: scaleX(0);
+      transition: transform 0.5s;
+    }
+    nav ul li a:hover:before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+
+    img {
+      border-style: double;
+      border: solid pink;
+      padding: ;
+      margin: 0px;
+      opacity: 0.8;
+    }
+
+    .one {
+      height: 100%;
+      width: 100%;
+    }
+
+    .two {
+      height: 13em;
+      width: 16em;
+    }
+
+    .three {
+      height: 13em;
+      width: 22em;
+    }
+
+    .four {
+      height: 13em;
+      width: 22em;
+    }
+
+    .five {
+      height: 13em;
+      width: 21.75em;
+    }
+
+    .six {
+      height: 25em;
+      width: 30em;
+    }
+
+    .seven {
+      height: 25em;
+      width: 53.05em;
+    }
+
+    .eight {
+      height: 17em;
+      width: 30em;
+    }
+
+    .nine {
+      height: 17em;
+      width: 26.25em;
+    }
+
+    .ten {
+      height: 17em;
+      width: 26em;
+    }
+
+    .eleven {
+      height: 10em;
+      width: 16em;
+    }
+
+    .twelve {
+      height: 10em;
+      width: 16em;
+    }
+
+    .thirteen {
+      height: 10em;
+      width: 16em;
+    }
+
+    .fourteen {
+      height: 10em;
+      width: 16.45em;
+    }
+
+    .fifteen {
+      height: 10em;
+      width: 16.45em;
+    }
+
+    .sixteen {
+      height: 100%;
+      width: 100%;
+    }
+
+    .seventeen {
+      height: em;
+      width: em;
+    }
+
+    .eighteen {
+      height: em;
+      width: em;
+    }
+
+    .nineteen {
+      height: em;
+      width: em;
+    }
+
+    .twenty {
+      height: em;
+      width: em;
+    }
+
+    .tone {
+      height: ;
+      width: ;
+    }
+
+    .ttwo {
+      height: ;
+      width: ;
+    }
+
+    .tthree {
+      height: ;
+      width: ;
+    }
+
+    .tfour {
+      height: ;
+      width: ;
+    }
+
+    .tfive {
+      height: ;
+      width: ;
+    }
+
+    .tsix {
+      height: ;
+      width: ;
+    }
+
+    .tseven {
+      height: ;
+      width: ;
+    }
+
+    .teight {
+      height: ;
+      width: ;
+    }
+
+    .tnine {
+      height: ;
+      width: ;
+    }
+
+    .thrty {
+      height: ;
+      width: ;
+    }
+
+    .thone {
+      height: ;
+      width: ;
+    }
+
+    .thtwo {
+      height: ;
+      width: ;
+    }
+  </style>
+  <nav>
+    <div class="lumbini">
+      <h2>Lumbini</h2>
+    </div>
+    <ul>
+      <li><a href="index.html"> Home</a></li>
+      <li><a href="Place to visit.html">Places to visit</a></li>
+      <li><a href="Time to visit.html">Time to visit</a></li>
+      <li><a href="Map.html">Location</a></li>
+      <li><a href="Gallery.html" class="gallery">Gallery</a></li>
+    </ul>
+  </nav>
+  <body>
+    <img src="Gallery\IMG_20190613_192214.jpg" alt="" class="one" />
+    <img src="Gallery\attr_123738.jpg" alt="" class="two" />
+
+    <img src="Gallery\IMG_20190613_192639.jpg" alt="" class="three" />
+    <img src="Gallery\IMG_20190613_193108.jpg" alt="" class="four" />
+    <img src="Gallery\attr_1873.jpg" alt="" class="five" />
+
+    <img src="Gallery\IMG_20190613_193521.jpg" alt="" class="six" />
+    <img src="Gallery\IMG_20190613_193802.jpg" alt="" class="seven" />
+    <img src="Gallery\IMG_20190613_193021.jpg" alt="" class="eight" />
+
+    <img src="Gallery\IMG_20190613_194046.jpg" alt="" class="nine" />
+    <img src="Gallery\IMG_20190613_193157.jpg" alt="" class="ten" />
+
+    <img src="Gallery\attr_123734.jpg" alt="" class="eleven" />
+    <img
+      src="Gallery\20746195808_951d82acf8_b_20181009125630_20181009125655.jpg"
+      alt=""
+      class="twelve"
+    />
+    <img
+      src="Gallery\Chinese_Maitreya_Temple_Lumbini_20181009131557.jpg"
+      alt=""
+      class="thirteen"
+    />
+    <img
+      src="Gallery\Gemrany_Monastery,Lumbini_20181009130404_20181009130413.jpg"
+      alt=""
+      class="fourteen"
+    />
+    <img src="Gallery\IMG_20190613_201525.jpg" alt="" class="fifteen" />
+
+    <img src="Gallery\IMG_20190613_192652.jpg" alt="" class="sixteen" />
+
+    <img
+      src="Gallery\IMG_20190613_193328.jpg"
+      alt=""
+      height="200"
+      width="285"
+      class="seventeen"
+    />
+    <img
+      src="Gallery\IMG_20190613_193947.jpg"
+      alt=""
+      height="200"
+      width="300"
+      class="eighteen"
+    />
+    <img
+      src="Gallery\IMG_20190613_195854.jpg"
+      alt=""
+      height="200"
+      width="400"
+      class="nineteen"
+    />
+    <img
+      src="Gallery\IMG_20190613_195302.jpg"
+      alt=""
+      height="200"
+      width="320"
+      class="twenty"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_193412.jpg"
+      alt=""
+      height="350"
+      width="425"
+      class="tone"
+    />
+    <img
+      src="Gallery\IMG_20190613_195355.jpg"
+      alt=""
+      height="350"
+      width="445"
+      class="ttwo"
+    />
+    <img
+      src="Gallery\IMG_20190613_195802.jpg"
+      alt=""
+      height="350"
+      width="445"
+      class="tthree"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_195045.jpg"
+      alt=""
+      height="300"
+      width="400"
+      class="tfour"
+    />
+    <img
+      src="Gallery\IMG_20190613_195459.jpg"
+      alt=""
+      height="300"
+      width="510"
+      class="tfive"
+    />
+    <img
+      src="Gallery\IMG_20190613_195713.jpg"
+      alt=""
+      height="300"
+      width="405"
+      class="tsix"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_195538.jpg"
+      alt=""
+      height="250"
+      width="450"
+      class="tseven"
+    />
+    <img
+      src="Gallery\IMG_20190613_200008.jpg"
+      alt=""
+      height="250"
+      width="465"
+      class="teight"
+    />
+    <img
+      src="Gallery\IMG_20190613_194159.jpg"
+      alt=""
+      height="250"
+      width="400"
+      class="tnine"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_194942.jpg"
+      alt=""
+      height="300"
+      width="430"
+      class="thirty"
+    />
+    <img
+      src="Gallery\IMG_20190613_194650.jpg"
+      alt=""
+      height="300"
+      width="445"
+      class="thone"
+    />
+    <img
+      src="Gallery\IMG_20190613_194746.jpg"
+      alt=""
+      height="300"
+      width="440"
+      class="thtwo"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_194414.jpg"
+      alt=""
+      height="300"
+      width="445"
+      class="ththree"
+    />
+    <img
+      src="Gallery\IMG_20190613_200101.jpg"
+      alt=""
+      height="300"
+      width="430"
+      class="thfour"
+    />
+    <img
+      src="Gallery\IMG_20190613_200155.jpg"
+      alt=""
+      height="300"
+      width="440"
+      class="thfive"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_194322.jpg"
+      alt=""
+      height="400"
+      width="715"
+      class="41"
+    />
+    <img
+      src="Gallery\IMG_20190613_200638.jpg"
+      alt=""
+      height="400"
+      width="614"
+      class="42"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_200722.jpg"
+      alt=""
+      height="350"
+      width="685"
+      class="43"
+    />
+    <img
+      src="Gallery\IMG_20190613_200256.jpg"
+      alt=""
+      height="350"
+      width="644"
+      class="44"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_200820.jpg"
+      alt=""
+      height="300"
+      width="425"
+      class="45"
+    />
+    <img
+      src="Gallery\IMG_20190613_201042.jpg"
+      alt=""
+      height="300"
+      width="446"
+      class="46"
+    />
+    <img
+      src="Gallery\IMG_20190613_200357.jpg"
+      alt=""
+      height="300"
+      width="445"
+      class="47"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_201302.jpg"
+      alt=""
+      height="300"
+      width="445"
+      class="48"
+    />
+    <img
+      src="Gallery\IMG_20190613_201351.jpg"
+      alt=""
+      height="300"
+      width="446"
+      class="49"
+    />
+    <img
+      src="Gallery\IMG_20190613_200452.jpg"
+      alt=""
+      height="300"
+      width="425"
+      class="50"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_201126.jpg"
+      alt=""
+      height="250"
+      width="465"
+      class="51"
+    />
+    <img
+      src="Gallery\IMG_20190613_201434.jpg"
+      alt=""
+      height="250"
+      width="400"
+      class="52"
+    />
+    <img
+      src="Gallery\IMG_20190613_193623.jpg"
+      alt=""
+      height="250"
+      width="450"
+      class="22"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_205829.jpg"
+      alt=""
+      height="400"
+      width="664"
+      class="33"
+    />
+    <img
+      src="Gallery\IMG_20190613_201753.jpg"
+      alt=""
+      height="400"
+      width="665"
+      class="54"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_201848.jpg"
+      alt=""
+      height="350"
+      width="619"
+      class="55"
+    />
+    <img
+      src="Gallery\IMG_20190613_201954.jpg"
+      alt=""
+      height="350"
+      width="710"
+      class="57"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_195620.jpg"
+      alt=""
+      height="300"
+      width="530"
+      class="56"
+    />
+    <img
+      src="Gallery\IMG_20190613_202038.jpg"
+      alt=""
+      height="300"
+      width="545"
+      class="58"
+    />
+    <img
+      src="Gallery\IMG_20190613_202159.jpg"
+      alt=""
+      height="300"
+      width="241"
+      class="59"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_202413.jpg"
+      alt=""
+      height="500"
+      width="769"
+      class="60"
+    />
+    <img
+      src="Gallery\IMG_20190613_202649.jpg"
+      alt=""
+      height="500"
+      width="560"
+      class="63"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_201621.jpg"
+      alt=""
+      height="300"
+      width="495"
+      class="61"
+    />
+    <img
+      src="Gallery\IMG_20190613_202608.jpg"
+      alt=""
+      height="300"
+      width="330"
+      class="64"
+    />
+    <img
+      src="Gallery\IMG_20190613_202910.jpg"
+      alt=""
+      height="300"
+      width="490"
+      class="65"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_195146.jpg"
+      alt=""
+      height="500"
+      width="330"
+      class="36"
+    />
+    <img
+      src="Gallery\IMG_20190613_203157.jpg"
+      alt=""
+      height="500"
+      width="999"
+      class="66"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_201703.jpg"
+      alt=""
+      height="300"
+      width="445"
+      class="67"
+    />
+    <img
+      src="Gallery\IMG_20190613_201208.jpg"
+      alt=""
+      height="300"
+      width="440"
+      class="68"
+    />
+    <img
+      src="Gallery\IMG_20190613_203259.jpg"
+      alt=""
+      height="300"
+      width="430"
+      class="69"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_193903.jpg"
+      alt=""
+      height="250"
+      width="380"
+      class="7"
+    />
+    <img
+      src="Gallery\IMG_20190613_192745.jpg"
+      alt=""
+      height="250"
+      width="440"
+      class="91"
+    />
+    <img
+      src="Gallery\IMG_20190613_202340.jpg"
+      alt=""
+      height="250"
+      width="495"
+      class="62"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_203355.jpg"
+      alt=""
+      height="69%"
+      width="100%"
+      class="70"
+    />
+    <img
+      src="Gallery\IMG_20190613_203506.jpg"
+      alt=""
+      height="80%"
+      width="100%"
+      class="71"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_202522.jpg"
+      alt=""
+      height="500"
+      width="679"
+      class="72"
+    />
+    <img
+      src="Gallery\IMG_20190613_203622.jpg"
+      alt=""
+      height="500"
+      width="650"
+      class="73"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_203650.jpg"
+      alt=""
+      height="450"
+      width="800"
+      class="74"
+    />
+    <img
+      src="Gallery\IMG_20190613_204705.jpg"
+      alt=""
+      height="450"
+      width="529"
+      class="75"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_204740.jpg"
+      alt=""
+      height="350"
+      width="699"
+      class="76"
+    />
+    <img
+      src="Gallery\IMG_20190613_204813.jpg"
+      alt=""
+      height="350"
+      width="630"
+      class="77"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_202116.jpg"
+      alt=""
+      height="600"
+      width="1340"
+      class="78"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_204847.jpg"
+      alt=""
+      height="450"
+      width="709"
+      class="79"
+    />
+    <img
+      src="Gallery\IMG_20190613_204916.jpg"
+      alt=""
+      height="450"
+      width="620"
+      class="80"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_202805.jpg"
+      alt=""
+      height="470"
+      width="660"
+      class="81"
+    />
+    <img
+      src="Gallery\IMG_20190613_205206.jpg"
+      alt=""
+      height="470"
+      width="669"
+      class="82"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_205233.jpg"
+      alt=""
+      height="650"
+      width="664.5"
+      class="83"
+    />
+    <img
+      src="Gallery\IMG_20190613_205425.jpg"
+      alt=""
+      height="650"
+      width="664.5"
+      class="84"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_205457.jpg"
+      alt=""
+      height="250"
+      width="308"
+      class="85"
+    />
+    <img
+      src="Gallery\IMG_20190613_204958.jpg"
+      alt=""
+      height="250"
+      width="350"
+      class="95"
+    />
+    <img
+      src="Gallery\IMG_20190613_205557.jpg"
+      alt=""
+      height="250"
+      width="350"
+      class="89"
+    />
+    <img
+      src="Gallery\IMG_20190613_205713.jpg"
+      alt=""
+      height="250"
+      width="300"
+      class="92"
+    />
+
+    <img
+      src="Gallery\Tilaurakot_Area_20181009124032_20181009124045.jpg"
+      alt=""
+      height="450"
+      width="750"
+      class="94"
+    />
+    <img
+      src="Gallery\IMG_20190613_204607.jpg"
+      alt=""
+      height="450"
+      width="579"
+      class="86"
+    />
+
+    <img
+      src="Gallery\Lumbini5_tk_buddhajayanti.jpg "
+      alt=""
+      height="400"
+      width="830"
+      class="87"
+    />
+    <img
+      src="Gallery\IMG_20190613_205643.jpg"
+      alt=""
+      height="400"
+      width="499"
+      class="88"
+    />
+
+    <img
+      src="Gallery\IMG_20190613_205324.jpg"
+      alt=""
+      height="500"
+      width="664.5"
+      class="90"
+    />
+    <img
+      src="Gallery\lumbini3.jpg"
+      alt=""
+      height="500"
+      width="664.5"
+      class="93"
+    />
+
+    <img
+      src="Gallery\lumbini1.jpeg"
+      alt=""
+      height="100%"
+      width="100%"
+      class="96"
+    />
+  </body>
+</html>
